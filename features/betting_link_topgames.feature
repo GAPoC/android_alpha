@@ -1,4 +1,4 @@
-@regression
+@regression @gareg
 Feature: Betting Link - Top Games
 
   Background:

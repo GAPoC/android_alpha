@@ -15,7 +15,7 @@ Feature: Alerts Tab
     Then I tap on the "alerts" icon tab
     Then the user is shown that the alert feed is "empty"
 
-  @regression
+  @regression @gareg
   Scenario: Verify Viewing an Article
     Given I navigate to the "alerts" tab
     When I tap on the article from "alerts" stream

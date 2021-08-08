@@ -1,4 +1,4 @@
-@applitools
+@applitools @garegapp
 Feature: Articles - Podcast Stream
 
   Background:

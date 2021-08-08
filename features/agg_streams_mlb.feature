@@ -29,7 +29,7 @@ Feature: Aggregate Streams - MLB
     And I tap on "My MLB Players" from my teams
     Then the "My MLB Players Stream" screen is displayed
 
-  @regression @smoke6 @smoke7
+  @regression @smoke6 @smoke7 @gareg
   Scenario: Adding and Removing an MLB Player
     And I tap on "Name" textview
     And I search for "Alec Mills"
