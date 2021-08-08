@@ -1,0 +1,86 @@
+credentials:
+  verified_email: 'br.report.qa@gmail.com'
+  verified_password: 'Test1234'
+  verified_username: 'veruca_salt'
+  verified_fName: 'Bleacher'
+  verified_lName: 'Robot'
+  invalid_email: 'brtmqzn.24@gmail.com'
+  invalid_password: 'Bleacher1983!'
+  invalid_email_format: '---@.gmailer.com'
+  valid_fb_email: 'asyerik@bleacherreport.com'
+  valid_fb_pw: 'Test1234!'
+  valid_phone: '4157354863' #Google Voice Phone number for QA
+  invalid_phone: '00000000000'
+  registered_phone: '5102402180'
+  deleted_user: 'deleteuserb@gmail.com'
+  deleted_user_pw: 'Test1234!'
+  bday_month: '3'
+  bday_day: '21'
+  bday_year: '1981'
+  registered_username: 'bleacher'
+  nofollowers_email: 'vadimbleach@gmail.com'
+  onefollower_email: 'vadimbleach@yahoo.com'
+  multforllowers_email: 'vadimbleach@outlook.com'
+  followers_test_password: 'Bleacher1983!'
+  no_dms_email: 'ian.rosenfield+nodm@bleacherreport.com'
+  no_dms_password: 'Bleacher1983!'
+  dmreceiver_email: 'ian.rosenfield+dmcatcher@bleacherreport.com'
+  dmreceiver_password: 'Test1234'
+  stream_add_email : 'testqgml@gmail.com'
+  stream_add_password: 'Test1234!'
+
+sign_up:
+  first_name: 'Bleacher'
+  last_name: 'Tester'
+  password: 'test1234'
+
+search_options:
+  player: 'Adam Kramer'
+  team: 'Perth Glory'
+  league: 'Chinese Super League'
+  sport: 'Golden State Warriors'
+  media: 'Kicks'
+  username: "cash_money"
+  name: "Alexander Syerik"
+  gif_results: "bear"
+  gif_no_results: "xcz"
+  gdpr_stream: 'Wigan Warriors'
+  verified_user: 'ScooterMagruder'
+  suspended_user: 'PRS24Standard'
+
+mentions:
+  username: 'cash_' #Searches for cash_money
+  first_name: 'Alexander'
+  last_name: 'Syerik'
+  invalid_uname: 'cashmoney'
+
+test_stream:
+  dodgeball: 'Dodgeball'
+  mobile_stream1: 'Mobile Automation 1'
+  mobile_stream2: 'Mobile Automation 2'
+  under_water: 'Underwater Basket Weaving'
+
+#---- HARDCODED TEXT ----
+
+comments:
+  greeting: "Hello there"
+  opinion: "This is the best article ever"
+  question: "Is this all there is?"
+  multiline: "Surrounded to me occasional pianoforte alteration unaffected impossible ye.
+  For saw half than cold. Pretty merits waited six talked pulled you.
+  Conduct replied off led whether any shortly why arrived adapted.
+  Numerous ladyship so raillery humoured goodness received an."
+
+bet_disclaimer:
+  fanduel: '*Eligibility restrictions apply. See Fanduel.com for details.'
+  draftking: '*Eligibility restrictions apply. See DraftKings.com for details.'
+
+#---- EXPECTED STRINGS FOUND IN APP ----
+
+app:
+  my_account_txt: "My Account"
+
+#---- EDIT BIO TXT INPUT ----
+
+txt_input:
+  user_bio: "Avid Sports fan. Warriors in 4!"
