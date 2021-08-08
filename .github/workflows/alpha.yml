@@ -34,6 +34,6 @@ jobs:
         bundle update
     - name: Execute tests
       run: |
-        rake run[alpha]
+        rake run[ga_alpha]
   
  
