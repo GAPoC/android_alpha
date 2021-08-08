@@ -27,13 +27,13 @@ jobs:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Set Up Repository
-    - uses: actions/checkout@v2
+      uses: actions/checkout@v2
     - name: Set Up Dependencies
       run: |
         bundle install
         bundle update
     - name: Execute tests
-    - run: |
-       rake run[alpha]
+      run: |
+        rake run[alpha]
   
  
