@@ -75,7 +75,7 @@ uk_locale_alpha: -p android10.0 LOCALE='GB' LANGUAGE='en' -p gdprActivity -t @uk
 au_locale_alpha: -p android10.0 LOCALE='AU' LANGUAGE='en' -t @au_regression TAG='@locale' -p parallel_alpha -p au_alpha_result
 be_locale_alpha: -p android10.0 LOCALE='BE' LANGUAGE='nl' -p gdprActivity -t @be_reg TAG='@locale' -p parallel_alpha -p be_alpha_result
 baseline_alpha: -p android10.0 -p baseline_batch -p appActivity -p parallel_alpha -t @baseline_alpha --format pretty --format json --out cucumberUI_<%= ENV['TEST_ENV_NUMBER']%>.json
-ga_alpha: -p android10.0 -p appActivity -p parallel_alpha -t @garegre -p alpha_result
+ga_alpha: -p android10.0 -p appActivity -p parallel_alpha -t @garegre
 ga_alpha_applitools: -p android10.0 -p alpha_batch -p appActivity -p parallel_alpha -t @garegreapp -p alpha_applitools_result
 #**RAKEFILE (REGRESSION) PROFILES**
 # These profiles define the release test run configuration
