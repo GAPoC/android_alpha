@@ -5,7 +5,7 @@ Feature: Alerts Tab
     Given I navigate to the "alerts" tab
     Then the user is shown that the alert feed is "active"
 
-  @applitools
+  @applitools @garegreapp
   Scenario: Verify Empty Alert Feed UI
     Given I navigate to the "my br" tab
     When I tap on the "Manage Streams" icon from toolbar menu
@@ -15,7 +15,7 @@ Feature: Alerts Tab
     Then I tap on the "alerts" icon tab
     Then the user is shown that the alert feed is "empty"
 
-  @regression @gareg
+  @regression @garegre
   Scenario: Verify Viewing an Article
     Given I navigate to the "alerts" tab
     When I tap on the article from "alerts" stream
