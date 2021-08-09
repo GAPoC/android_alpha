@@ -1,0 +1,95 @@
+[
+  {
+    "uri": "features/alerts.feature",
+    "id": "alerts-tab",
+    "keyword": "Feature",
+    "name": "Alerts Tab",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "alerts-tab;verify-viewing-an-article",
+        "keyword": "Scenario",
+        "name": "Verify Viewing an Article",
+        "description": "",
+        "line": 19,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 18
+          },
+          {
+            "name": "@garegre",
+            "line": 18
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/env.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44389005177
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I navigate to the \"alerts\" tab",
+            "line": 20,
+            "output": [
+              "No Social Promo Shown",
+              "No Social Promo Shown",
+              "No Social Promo Shown"
+            ],
+            "match": {
+              "location": "features/step_definitions/dashboard_stepdef.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41763901243
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I tap on the article from \"alerts\" stream",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/alerts_stepdef.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6405800466
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "the article is shown from \"alerts\" stream",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/alerts_stepdef.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 571600
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205087401
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -4,7 +4,7 @@ Feature: Aggregate Streams - NBA
     When I tap on the add button from my teams
     And I enter "NBA Players" list
 
-  @applitools @garegapp
+  @applitools
   Scenario: NBA Players List UI
     Then the "Add NLB Players List" screen is displayed
     When I tap on "Position" textview
