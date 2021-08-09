@@ -41,5 +41,12 @@ jobs:
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
         path: "**/cucumberAlpha_.json"
+    - name: Running the Sphinx to gh-pages Action
+      uses: uibcdf/action-sphinx-docs-to-gh-pages@v1.0-beta.2
+      with:
+        branch: main
+        dir_docs: /
+        sphinxopts: ''
+
   
  
