@@ -36,6 +36,8 @@ jobs:
       run: |
         rake run[ga_alpha]
         ls -a
+        cd results
+        ls -a
     - name: Test Results 
       uses: deblockt/cucumber-report-annotations-action@v1.7
       with:
