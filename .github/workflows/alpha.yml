@@ -35,9 +35,6 @@ jobs:
     - name: Execute tests
       run: |
         rake run[ga_alpha]
-        ls -a
-        cd /home/runner/work/_temp
-        ls -a
     - name: Test Results 
       uses: deblockt/cucumber-report-annotations-action@v1.7
       with:
@@ -45,7 +42,7 @@ jobs:
         path: "**/cucumberAlpha_.json"
     - name: Generate Report
       run: |
-        java -jar cucumber-sandwich.jar -n -f . -o reports/
+        java -jar **/lib/cucumber-sandwich/cucumber-sandwich.jar -n -f . -o reports/
     - name: Publish Report
       uses: peaceiris/actions-gh-pages@v3
       with:
@@ -72,9 +69,6 @@ jobs:
     - name: Execute tests
       run: |
         rake run[ga_alpha_applitools]
-        ls -a
-        cd /home/runner/work/_temp/android_automation_results/
-        ls -a
     - name: Test Results 
       uses: deblockt/cucumber-report-annotations-action@v1.7
       with:
