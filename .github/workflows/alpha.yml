@@ -43,11 +43,14 @@ jobs:
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
         path: "**/cucumberAlpha_.json"
+    - name: Generate Report
+      run: |
+        java -jar cucumber-sandwich.jar -n -f . -o reports/
     - name: Publish Report
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .
+        publish_dir: reports/
   run_applitools_tests:
     runs-on: ubuntu-latest
     needs: run_regression_tests
@@ -77,6 +80,7 @@ jobs:
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
         path: "**/cucumberAlphaUI_.json"
+    
 
 
 
