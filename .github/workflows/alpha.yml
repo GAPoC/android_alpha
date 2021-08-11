@@ -57,7 +57,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: reports/
+        publish_dir: reports/cucumber-html-reports/cucumber-html-reports
   run_applitools_tests:
     runs-on: ubuntu-latest
     needs: run_regression_tests
