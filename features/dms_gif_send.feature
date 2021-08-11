@@ -1,4 +1,4 @@
-@regression @BTEAM-1189 @garegre
+@regression @BTEAM-1189
 Feature: Direct Message - Send GIF
 
   Background:
