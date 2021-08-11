@@ -1,3 +1,0 @@
-@todo
-  Feature: Android Tags
-
