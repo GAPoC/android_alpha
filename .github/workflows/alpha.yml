@@ -50,6 +50,7 @@ jobs:
         publish_dir: .
   run_applitools_tests:
     runs-on: ubuntu-latest
+    needs: run_regression_tests
     steps:
     - name: Set up Ruby
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
