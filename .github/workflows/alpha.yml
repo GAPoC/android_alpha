@@ -41,7 +41,7 @@ jobs:
         bundle install
         bundle update
         pwd
-        java -v
+        
     - name: Execute tests
       run: |
         rake run[ga_alpha]
