@@ -36,7 +36,7 @@ jobs:
       run: |
         rake run[ga_alpha]
         ls -a
-        cd results
+        cd /home/ubuntu/tmp/android_automation_results/
         ls -a
     - name: Test Results 
       uses: deblockt/cucumber-report-annotations-action@v1.7
@@ -70,7 +70,7 @@ jobs:
       run: |
         rake run[ga_alpha_applitools]
         ls -a
-        cd results
+        cd /home/ubuntu/tmp/android_automation_results/
         ls -a
     - name: Test Results 
       uses: deblockt/cucumber-report-annotations-action@v1.7
