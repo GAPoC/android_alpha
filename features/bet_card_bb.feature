@@ -1,4 +1,4 @@
-@applitools @applitools_betting @garegapp
+@applitools @applitools_betting @garegapp @garegreapp
 Feature: Bet card - Today's picks - Multiple leagues - BB and Tennis
 
   Background:
