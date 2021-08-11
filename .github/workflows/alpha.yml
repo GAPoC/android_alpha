@@ -32,6 +32,8 @@ jobs:
       run: |
         bundle install
         bundle update
+        pwd
+        java -v
     - name: Execute tests
       run: |
         rake run[ga_alpha]
@@ -42,7 +44,7 @@ jobs:
         path: "**/cucumberAlpha_.json"
     - name: Generate Report
       run: |
-        java -jar **/lib/cucumber-sandwich/cucumber-sandwich.jar -n -f . -o reports/
+        java -jar /lib/cucumber-sandwich/cucumber-sandwich.jar -n -f . -o reports/
     - name: Publish Report
       uses: peaceiris/actions-gh-pages@v3
       with:
