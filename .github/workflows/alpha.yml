@@ -113,7 +113,7 @@ jobs:
     - name: Archive code coverage results
       uses: actions/upload-artifact@v2
       with:
-        name: Test Results
+        name: Aplitools Test Results
         path: reports/cucumber-html-reports/
   
   batch-completion-notification:
