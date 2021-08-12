@@ -101,7 +101,7 @@ class MobileDriver
   #Used new eyes_appium
   def self.snap_eyes(test_name)
     eyes = Applitools::Appium::Eyes.new() # Initialize the eyes SDK
-    eyes.api_key = '6zRsif2Y4CYchwTK98ItIxaBrtpP109M4W8BVlcvcRCHLY110' #Set your private API key.
+    eyes.api_key = 'V9A8R6TdgyurNJlmEdmhYTMIlmY1F11156diiZP0kmx1Q110' #Set your private API key.
     eyes.match_level = 'Strict'
 
     if !@batch_name.nil?
