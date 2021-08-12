@@ -12,7 +12,9 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+env:
+      APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
+      APPLITOOLS_BATCH_ID: ${{ github.sha }}
 jobs:
   run_regression_tests:
 
@@ -59,11 +61,10 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: reports/cucumber-html-reports/cucumber-html-reports
+  
   run_applitools_tests:
     runs-on: ubuntu-latest
-    env:
-      APPLITOOLS_API_KEY: ${{ secrets.APPLITOOLS_API_KEY }}
-      APPLITOOLS_BATCH_ID: ${{ github.sha }}
+    
     needs: run_regression_tests
     steps:
     - name: Set up Ruby
