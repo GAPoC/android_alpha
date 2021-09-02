@@ -20,7 +20,9 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-    
+    - name: Set current date as env variable
+      run: echo "NOW=$(date +'%Y-%m-%dT%H:%M:%S')" >> $GITHUB_ENV
+        
     - name: Set up Ruby
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
     # change this to (see https://github.com/ruby/setup-ruby#versioning):
@@ -50,7 +52,7 @@ jobs:
         rake run[ga_alpha]
       continue-on-error: true
     
-    - name: Test Results 
+    - name: Regression Test Results 
       uses: deblockt/cucumber-report-annotations-action@v1.7
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
@@ -65,6 +67,10 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: reports/cucumber-html-reports/cucumber-html-reports
+        publish_branch: gh-pages
+        destination_dir: /$NOW/regression
+        enable_jekyll: true
+        keep_files: true
     
     - name: Archive Regression results
       uses: actions/upload-artifact@v2
@@ -100,7 +106,7 @@ jobs:
         rake run[ga_alpha_applitools]
       continue-on-error: true
     
-    - name: Test Results 
+    - name: Regression Test Results  
       uses: deblockt/cucumber-report-annotations-action@v1.7
       with:
         access-token: ${{ secrets.GITHUB_TOKEN }}
@@ -109,8 +115,18 @@ jobs:
     - name: Generate Report
       run: |
         java -jar /home/runner/work/android_alpha/android_alpha/lib/cucumber-sandwich/cucumber-sandwich.jar -n -f . -o reports/
-        
-    - name: Archive code coverage results
+    
+    - name: Publish Report Applitools Test Reuslts
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: reports/cucumber-html-reports/cucumber-html-reports
+        publish_branch: gh-pages
+        destination_dir: /$NOW/applitools
+        enable_jekyll: true
+        keep_files: true
+    
+    - name: Archive Applitools Test results
       uses: actions/upload-artifact@v2
       with:
         name: Aplitools Test Results
