@@ -68,7 +68,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: reports/cucumber-html-reports/cucumber-html-reports
         publish_branch: gh-pages
-        destination_dir: /$NOW/regression
+        destination_dir: /regression
         enable_jekyll: true
         keep_files: true
     
@@ -122,7 +122,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: reports/cucumber-html-reports/cucumber-html-reports
         publish_branch: gh-pages
-        destination_dir: /$NOW/applitools
+        destination_dir: /applitools
         enable_jekyll: true
         keep_files: true
     
