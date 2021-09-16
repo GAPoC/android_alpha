@@ -116,7 +116,7 @@ jobs:
     - name: Generate Report
       run: |
         java -jar /home/runner/work/android_alpha/android_alpha/lib/cucumber-sandwich/cucumber-sandwich.jar -n -f . -o reports/
-    
+        mkdir applitools/
     - name: Publish Report Applitools Test Reuslts
       uses: peaceiris/actions-gh-pages@v3
       with:
