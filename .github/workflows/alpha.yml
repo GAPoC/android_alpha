@@ -61,6 +61,7 @@ jobs:
     - name: Generate Report
       run: |
         java -jar /home/runner/work/android_alpha/android_alpha/lib/cucumber-sandwich/cucumber-sandwich.jar -n -f . -o reports/
+        mkdir regression
     
     - name: Publish Report
       uses: peaceiris/actions-gh-pages@v3
@@ -68,7 +69,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: reports/cucumber-html-reports/cucumber-html-reports
         publish_branch: gh-pages
-        destination_dir: /regression
+        destination_dir: regression/
         enable_jekyll: true
         keep_files: true
     
